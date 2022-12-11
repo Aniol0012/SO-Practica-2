@@ -15,12 +15,13 @@ tipFitxer() {
 	local filename=$1
 
 	# Usem la comanda "file" per a obtenir el tipus de fitxer i el format
-	local file_output=$(file "$filename")
+	local file_output=$(file $filename)
+
 
 	# Guardem l'estat de la comanda "file" prèviament realitzada
 	local exit_status=$?
 
-	if [ $exit_status -ne 0 ]
+	if [ $exit_status -lt 0 ]
 		then
 		echo "ERROR en l'execució de la funció tipFitxer. Codi retorn: $exit_status"
 	fi
