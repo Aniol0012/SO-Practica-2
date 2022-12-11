@@ -24,9 +24,9 @@ tipFitxer() {
 	if [ $exit_status -lt 0 ]
 		then
 		echo "ERROR en l'execució de la funció tipFitxer. Codi retorn: $exit_status"
-	fi
-	
-	echo "El nom i el tipus del fitxer és => $file_output"
+	else
+		echo "El nom i el tipus del fitxer és => $file_output"
+	fi	
 }
 
 # En el cas que passem almenys 1 paràmetre
