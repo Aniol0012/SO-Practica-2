@@ -12,9 +12,9 @@
   ```
 
 ### Exemple:
-  ```sh
-  touch test.txt
-  ```
+   ```sh
+   touch test.txt
+   ```
   ```sh
   ./prac2_3.sh
   ```
